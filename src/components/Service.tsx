@@ -1,10 +1,10 @@
 import React from 'react';
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./cards/ServiceCard";
 import {FaGlobe, FaPen, FaSignal} from "react-icons/fa";
 import {BsBookFill, BsFillBookmarkFill, BsFillPeopleFill} from "react-icons/bs";
 import {IoStatsChartSharp} from "react-icons/io5";
-import Header from "./Header";
-import Divider from "./Divider";
+import Header from "./partials/Header";
+import Divider from "./partials/Divider";
 
 function Service() {
     return (

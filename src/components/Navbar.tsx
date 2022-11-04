@@ -1,5 +1,5 @@
 import React from 'react';
-import NavElement from "./NavElement";
+import NavElement from "./partials/NavElement";
 
 function Navbar() {
     return (

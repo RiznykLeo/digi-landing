@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from "./Header";
-import Divider from "./Divider";
-import WorkCard from "./WorkCard";
+import Header from "./partials/Header";
+import Divider from "./partials/Divider";
+import WorkCard from "./cards/WorkCard";
 
 function Works() {
     return (
