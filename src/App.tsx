@@ -7,6 +7,8 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import News from "./components/News";
 import Contact from "./components/partials/contact";
+import Footer from "./components/Footer";
+import Credits from "./components/Credits";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
             <Testimonials/>
             <News/>
             <Contact/>
+            <Footer/>
+            <Credits/>
         </div>
     );
 }
