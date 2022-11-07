@@ -13,10 +13,8 @@ import Credits from "./components/Credits";
 function App() {
     return (
         <div className='bg-black w-full h-full'>
-            <div className='mx-48'>
-                <Navbar/>
-                <Banner/>
-            </div>
+            <Navbar/>
+            <Banner/>
             <Service/>
             <Works/>
             <About/>
