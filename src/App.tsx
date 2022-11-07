@@ -11,10 +11,8 @@ import Contact from "./components/partials/contact";
 function App() {
     return (
         <div className='bg-black w-full h-full'>
-            <div className='mx-48'>
-                <Navbar/>
-                <Banner/>
-            </div>
+            <Navbar/>
+            <Banner/>
             <Service/>
             <Works/>
             <About/>

@@ -5,7 +5,7 @@ import {RiLightbulbFlashLine} from "react-icons/ri";
 
 function Banner() {
     return (
-        <div className='my-24 py-8'>
+        <div className=' px-48 py-24 py-8'>
             <p className='text-cyan-300 uppercase mb-4'>
                 Creative mind, creative works.
             </p>
