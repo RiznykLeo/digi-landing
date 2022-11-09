@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from "./partials/Header";
-import Divider from "./partials/Divider";
-import AboutCard from "./cards/AboutCard";
+import Header from "../partials/Header";
+import Divider from "../partials/Divider";
+import AboutCard from "../cards/AboutCard";
 
 function About() {
     return (
-        <div>
+        <div id='aboutSection'>
             <Header header="About." prompt="We are more than digital agency"/>
             <div className='flex justify-between mx-48 gap-4'>
                 <AboutCard header='Who we are'
