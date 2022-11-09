@@ -11,7 +11,6 @@ function NavLink({title}: INavElement) {
         document.getElementById(scrollTo)!.scrollIntoView({behavior: "smooth"})
     }
 
-    console.log(activeLinkId)
     return (
         <li onClick={handleClick}
             className='text-white font-bold uppercase'>

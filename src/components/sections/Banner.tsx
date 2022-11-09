@@ -8,16 +8,32 @@ function Banner() {
     const HomeRef = useNav("home")
     return (
         <div ref={HomeRef} className='px-48 py-24 pt-32 pb-8' id='homeSection'>
-            <p className='text-cyan-300 uppercase mb-4'>
+            <p className='text-cyan-300 uppercase '>
                 Creative mind, creative works.
             </p>
-            <h1 className='text-white text-7xl font-bold w-1/2 mb-24'>
+            <h1 className='text-7xl font-semibold w-1/2 pb-24
+            bg-gradient-to-r bg-clip-text  text-transparent
+            from-purple-500 via-cyan-300 to-indigo-500
+            animate-text
+            '>
                 We are digital agency.
             </h1>
-            <button className='border-2 border-cyan-300
-             text-white font-bold py-4 px-4 uppercase text-lg w-1/4 mb-24'>
-                getting started
+
+            <button
+                className="btn mb-16 px-10 py-5 relative border-2
+                border-cyan-300 uppercase font-semibold tracking-wider
+                 leading-none overflow-hidden"
+                type="button">
+                <span className="absolute inset-0 bg-gradient-to-r
+                 text-white from-cyan-300 to-purple-400"></span>
+                <span className="absolute inset-0 text-white
+                 flex justify-center items-center font-bold">
+                Getting started
+                </span>
+                Getting started
             </button>
+
+
             <div className='flex gap-4'>
                 <BannerCard header="Future Concept." icon={<BiPaperPlane/>}/>
                 <BannerCard header="The Big Ideas." icon={<BiBrain/>}/>
