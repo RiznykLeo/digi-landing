@@ -4,7 +4,8 @@ import {FaMapMarkerAlt} from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className='bg-black px-48 text-white py-12 border-b-gray-500 border-b'>
+        <div className='bg-black px-48 text-white py-12 border-b-gray-500 border-b'
+             id='contactSection'>
             <div className='flex justify-between'>
                 <ul className='flex flex-col gap-6'>
                     <li className='text-4xl font-bold'>

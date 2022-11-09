@@ -13,7 +13,6 @@ function AboutCard(props: AboutCardProps) {
     ]
     if (props.border) {
         styles.push('border-l-2 border-cyan-300')
-        console.log(styles.join(''))
     }
     return (
         <div className='w-1/4 text-white'>

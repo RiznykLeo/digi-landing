@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from "./partials/Header";
-import Divider from "./partials/Divider";
-import TestimonialsCard from "./cards/TestimonialsCard";
+import Header from "../partials/Header";
+import Divider from "../partials/Divider";
+import TestimonialsCard from "../cards/TestimonialsCard";
 import {SiAdobe, SiAffinity, SiAlitalia, SiAnalogue, SiApachekafka, SiDigg} from "react-icons/si";
 
 function Testimonials() {
     return (
-        <div className="bg-[rgb(5,10,10)] ">
+        <div className="bg-[rgb(5,10,10)]" id="testimonialsSection">
             <Header header="Testimonials." prompt="We're more than digital agency"/>
             <div className='flex justify-between gap-4 px-48'>
                 <TestimonialsCard
