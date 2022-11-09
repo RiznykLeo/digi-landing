@@ -1,10 +1,12 @@
 import React from 'react';
 import Divider from "../partials/Divider";
 import NewsCard from "../cards/NewsCard";
+import {useNav} from "../hooks/useNav";
 
 function News() {
+    const NewsRef = useNav('blog')
     return (
-        <div className='flex flex-col items-center text-white mt-4' id='blogSection'>
+        <div ref={NewsRef} className='flex flex-col items-center text-white mt-4' id='blogSection'>
             <h2 className='text-2xl font-bold'>
                 Latest News.
             </h2>

@@ -1,11 +1,13 @@
-import React from 'react';
-import BannerCard from "./cards/BannerCard";
+import React, {useRef} from 'react';
+import BannerCard from "../cards/BannerCard";
 import {BiBrain, BiPaperPlane} from "react-icons/bi";
 import {RiLightbulbFlashLine} from "react-icons/ri";
+import {useNav} from "../hooks/useNav";
 
 function Banner() {
+    const HomeRef = useNav("home")
     return (
-        <div className=' px-48 py-24 pt-32 pb-8'>
+        <div ref={HomeRef} className='px-48 py-24 pt-32 pb-8' id='homeSection'>
             <p className='text-cyan-300 uppercase mb-4'>
                 Creative mind, creative works.
             </p>

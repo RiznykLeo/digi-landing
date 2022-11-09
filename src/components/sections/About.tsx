@@ -2,10 +2,12 @@ import React from 'react';
 import Header from "../partials/Header";
 import Divider from "../partials/Divider";
 import AboutCard from "../cards/AboutCard";
+import {useNav} from "../hooks/useNav";
 
 function About() {
+    const AboutRef = useNav("about")
     return (
-        <div id='aboutSection'>
+        <div ref={AboutRef} id='aboutSection'>
             <Header header="About." prompt="We are more than digital agency"/>
             <div className='flex justify-between mx-48 gap-4'>
                 <AboutCard header='Who we are'

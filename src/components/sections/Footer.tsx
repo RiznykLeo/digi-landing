@@ -1,10 +1,12 @@
 import React from 'react';
 import {AiFillCalendar, AiFillMail, AiFillPhone} from "react-icons/ai";
 import {FaMapMarkerAlt} from "react-icons/fa";
+import {useNav} from "../hooks/useNav";
 
 function Footer() {
+    const FooterRef = useNav("contact")
     return (
-        <div className='bg-black px-48 text-white py-12 border-b-gray-500 border-b'
+        <div ref={FooterRef} className='bg-black px-48 text-white py-12 border-b-gray-500 border-b'
              id='contactSection'>
             <div className='flex justify-between'>
                 <ul className='flex flex-col gap-6'>

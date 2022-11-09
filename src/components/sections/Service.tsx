@@ -5,10 +5,12 @@ import {BsBookFill, BsFillBookmarkFill, BsFillPeopleFill} from "react-icons/bs";
 import {IoStatsChartSharp} from "react-icons/io5";
 import Header from "../partials/Header";
 import Divider from "../partials/Divider";
+import {useNav} from "../hooks/useNav";
 
 function Service() {
+    const ServicesRef = useNav('services')
     return (
-        <div className='text-white bg-[rgb(5,10,10)]' id='servicesSection'>
+        <div ref={ServicesRef} className='text-white bg-[rgb(5,10,10)]' id='servicesSection'>
             <Header header='Services.' prompt='our services for clients'/>
             <div className='grid grid-cols-3 grid-rows-2 gap-4 mx-48'>
                 <ServiceCard header='Digital Strategy' icon={<FaSignal/>}/>
