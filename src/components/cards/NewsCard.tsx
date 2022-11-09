@@ -21,9 +21,17 @@ function NewsCard({img, header}: NewsCardProps) {
                     adipisicing elit. Omnis, quas!
                 </p>
                 <button
-                    className='border border-cyan-300 font-bold
-                     px-4 py-2 w-full text-start'>
-                    Read More
+                    className="btn px-10 py-5 relative border-2
+                border-cyan-300 uppercase font-bold tracking-wider
+                 leading-none overflow-hidden"
+                    type="button">
+                <span className="absolute inset-0 bg-gradient-to-r
+                 text-white from-cyan-300 to-purple-400"></span>
+                    <span className="absolute inset-0 text-white
+                 flex justify-center items-center font-bold">
+                Read more
+                </span>
+                    Read more
                 </button>
             </div>
         </div>

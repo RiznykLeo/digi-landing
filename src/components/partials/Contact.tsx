@@ -24,8 +24,18 @@ function Contact() {
                 <h2 className='text-4xl font-bold'>
                     Have any project in mind?
                 </h2>
-                <button className='border-2 py-2 px-4 border-cyan-300 font-bold'>
-                    Make inquiry
+                <button
+                    className="btn px-10 py-5 relative border-2
+                border-cyan-300 uppercase tracking-wider
+                 leading-none overflow-hidden font-bold"
+                    type="button">
+                <span className="absolute inset-0 bg-gradient-to-r
+                 text-white from-cyan-300 to-purple-400"></span>
+                    <span className="absolute inset-0 text-white
+                 flex justify-center items-center font-bold">
+                    Make Inquiry
+                </span>
+                    Make Inquiry
                 </button>
             </div>
 

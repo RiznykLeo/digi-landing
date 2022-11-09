@@ -6,7 +6,7 @@ import Works from "./components/sections/Works";
 import About from "./components/sections/About";
 import Testimonials from "./components/sections/Testimonials";
 import News from "./components/sections/News";
-import Contact from "./components/partials/contact";
+import Contact from "./components/partials/Contact";
 import Footer from "./components/sections/Footer";
 import Credits from "./components/Credits";
 import {NavProvider} from "./components/context/NavContext";

@@ -21,4 +21,18 @@
     width: 50%;
 }
 
+.servicecard .underline {
+    transition: 300ms;
+}
 
+.servicecard:hover .underline {
+    width: 100%;
+}
+
+.workcard .filter {
+    transition: 400ms;
+}
+
+.workcard:hover .filter {
+    opacity: 0;
+}
