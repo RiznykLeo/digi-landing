@@ -3,10 +3,12 @@ import Header from "../partials/Header";
 import Divider from "../partials/Divider";
 import TestimonialsCard from "../cards/TestimonialsCard";
 import {SiAdobe, SiAffinity, SiAlitalia, SiAnalogue, SiApachekafka, SiDigg} from "react-icons/si";
+import {useNav} from "../hooks/useNav";
 
 function Testimonials() {
+    const TestimonialsRef = useNav('testimonials')
     return (
-        <div className="bg-[rgb(5,10,10)]" id="testimonialsSection">
+        <div ref={TestimonialsRef} className="bg-[rgb(5,10,10)]" id="testimonialsSection">
             <Header header="Testimonials." prompt="We're more than digital agency"/>
             <div className='flex justify-between gap-4 px-48'>
                 <TestimonialsCard

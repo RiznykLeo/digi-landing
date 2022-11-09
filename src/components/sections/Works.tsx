@@ -2,10 +2,12 @@ import React from 'react';
 import Header from "../partials/Header";
 import Divider from "../partials/Divider";
 import WorkCard from "../cards/WorkCard";
+import {useNav} from "../hooks/useNav";
 
 function Works() {
+    const WorksRef = useNav('works')
     return (
-        <div className='bg-zinc-900' id='worksSection'>
+        <div ref={WorksRef} className='bg-zinc-900' id='worksSection'>
             <Header header="Works." prompt="things we've made"/>
             <div className='flex justify-between gap-4 mx-48'>
                 <WorkCard
