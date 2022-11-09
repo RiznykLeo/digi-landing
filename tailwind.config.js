@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
         "./src/**/**/*.{js,jsx,ts,tsx}"
@@ -20,6 +21,23 @@ module.exports = {
 
             '2xl': '1536px',
             // => @media (min-width: 1536px) { ... }
+        },
+        extend: {
+            'animation': {
+                'text': 'text 7s ease infinite',
+            },
+            'keyframes': {
+                'text': {
+                    '0%, 100%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'left center'
+                    },
+                    '50%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'right center'
+                    }
+                },
+            }
         },
     },
     plugins: [],

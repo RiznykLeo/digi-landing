@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.btn span:first-child {
+    transform: translateX(-101%);
+    transition: transform .3s ease-in
+}
+
+.btn:hover span {
+    transform: translateX(0)
+}
+
+
+.bannercard .divider {
+    transition: 300ms;
+}
+
+.bannercard:hover .divider {
+    width: 50%;
+}
+
+
