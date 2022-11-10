@@ -9,7 +9,7 @@ function Works() {
     return (
         <div ref={WorksRef} className='bg-zinc-900' id='worksSection'>
             <Header header="Works." prompt="things we've made"/>
-            <div className='flex justify-between gap-4 mx-48'>
+            <div className='lg:flex lg:justify-between lg:gap-4 px-8 lg:px-40'>
                 <WorkCard
                     img='https://images.unsplash.com/photo-1503328427499-d92d1ac3d174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
                 <WorkCard

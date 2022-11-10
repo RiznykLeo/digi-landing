@@ -7,7 +7,7 @@ interface NewsCardProps {
 
 function NewsCard({img, header}: NewsCardProps) {
     return (
-        <div className='border w-1/3'>
+        <div className='border mb-8 lg:w-1/3'>
             <img
                 className="w-full h-[300px] object-cover"
                 src={img}

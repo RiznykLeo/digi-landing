@@ -7,7 +7,7 @@ interface BannerCardProps {
 
 function BannerCard(props: BannerCardProps) {
     return (
-        <div className='bannercard p-8
+        <div className='bannercard my-4 p-8
         text-white bg-zinc-900 border-2 border-zinc-900'>
             <div className='icon text-5xl text-cyan-300 mb-4 flex'>
                 {props.icon}

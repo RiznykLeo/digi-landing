@@ -7,7 +7,7 @@ interface HeaderProps {
 
 function Header(props: HeaderProps) {
     return (
-        <div className='pt-16 pb-24 mx-48'>
+        <div className='pt-16 pb-24 px-8 lg:px-40'>
             <div className='flex items-center gap-6 mb-4'>
                 <div className='w-[100px] h-[1px] bg-cyan-300 mt-2'/>
                 <h2 className='text-4xl font-bold align-middle text-white'>

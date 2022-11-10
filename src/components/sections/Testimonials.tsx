@@ -10,7 +10,7 @@ function Testimonials() {
     return (
         <div ref={TestimonialsRef} className="bg-[rgb(5,10,10)]" id="testimonialsSection">
             <Header header="Testimonials." prompt="We're more than digital agency"/>
-            <div className='flex justify-between gap-4 px-48'>
+            <div className='lg:flex lg:justify-between lg:gap-4 px-8 lg:px-40'>
                 <TestimonialsCard
                     img='https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
                     name='Kristiano Lupa'
@@ -24,7 +24,7 @@ function Testimonials() {
                     name='Marena Dola'
                     position='Graphic Designer'/>
             </div>
-            <ul className='flex justify-between text-white px-48 text-4xl py-16'>
+            <ul className='flex justify-between text-white px-8 lg:px-40 text-4xl py-16'>
                 <li><SiAdobe/></li>
                 <li><SiDigg/></li>
                 <li><SiAffinity/></li>

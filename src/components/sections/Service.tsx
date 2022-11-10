@@ -12,7 +12,7 @@ function Service() {
     return (
         <div ref={ServicesRef} className='text-white bg-[rgb(5,10,10)]' id='servicesSection'>
             <Header header='Services.' prompt='our services for clients'/>
-            <div className='grid grid-cols-3 grid-rows-2 gap-4 mx-48'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-4 px-8 lg:px-40'>
                 <ServiceCard header='Digital Strategy' icon={<FaSignal/>}/>
                 <ServiceCard header='UX Designs' icon={<FaPen/>}/>
                 <ServiceCard header='UI Designs' icon={<BsFillPeopleFill/>}/>
