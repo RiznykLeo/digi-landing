@@ -1,7 +1,7 @@
-import React, {useContext, useRef} from 'react';
+import React from 'react';
 import ServiceCard from "../cards/ServiceCard";
 import {FaGlobe, FaPen, FaSignal} from "react-icons/fa";
-import {BsBookFill, BsFillBookmarkFill, BsFillPeopleFill} from "react-icons/bs";
+import {BsFillBookmarkFill, BsFillPeopleFill} from "react-icons/bs";
 import {IoStatsChartSharp} from "react-icons/io5";
 import Header from "../partials/Header";
 import Divider from "../partials/Divider";

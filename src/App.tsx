@@ -1,5 +1,5 @@
-import React, {ReactNode, useRef} from 'react';
-import Navbar from "./components/Navbar";
+import React from 'react';
+import Navbar from "./components/partials/Navbar";
 import Banner from "./components/sections/Banner";
 import Service from "./components/sections/Service";
 import Works from "./components/sections/Works";
@@ -8,7 +8,7 @@ import Testimonials from "./components/sections/Testimonials";
 import News from "./components/sections/News";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
-import Credits from "./components/Credits";
+import Credits from "./components/partials/Credits";
 import {NavProvider} from "./components/context/NavContext";
 
 

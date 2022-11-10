@@ -16,7 +16,7 @@ function AboutCard(props: AboutCardProps) {
     }
     return (
         <div className='lg:w-1/4 text-white pb-16'>
-            <img className='w-full h-[300px] lg:h-1/3 mb-4 object-cover' src={props.img} alt="about image"/>
+            <img className='w-full h-[300px] lg:h-1/3 mb-4 object-cover' src={props.img} alt="about"/>
             <div className={styles.join('')}>
                 <h3 className='text-2xl font-bold mb-4'>
                     {props.header}

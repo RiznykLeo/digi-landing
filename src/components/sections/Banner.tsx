@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import BannerCard from "../cards/BannerCard";
 import {BiBrain, BiPaperPlane} from "react-icons/bi";
 import {RiLightbulbFlashLine} from "react-icons/ri";
@@ -6,6 +6,11 @@ import {useNav} from "../hooks/useNav";
 
 function Banner() {
     const HomeRef = useNav("home")
+
+    function handleClick() {
+        document.getElementById("servicesSection")!.scrollIntoView({behavior: "smooth"})
+    }
+
     return (
         <div ref={HomeRef} className='px-8 lg:px-40 py-24 pt-32 pb-8' id='homeSection'>
             <p className='text-cyan-300 uppercase '>
@@ -19,11 +24,11 @@ function Banner() {
                 We are digital agency.
             </h1>
 
-            <button
-                className="btn mb-16 px-10 py-5 relative border-2
+            <button onClick={handleClick}
+                    className="btn mb-16 px-10 py-5 relative border-2
                 border-cyan-300 uppercase font-semibold tracking-wider
                  leading-none overflow-hidden"
-                type="button">
+                    type="button">
                 <span className="absolute inset-0 bg-gradient-to-r
                  text-white from-cyan-300 to-purple-400"></span>
                 <span className="absolute inset-0 text-white

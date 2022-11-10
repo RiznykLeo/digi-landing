@@ -1,10 +1,6 @@
-import React, {useContext, useRef, useState} from 'react';
-import NavLink from "./partials/NavLink";
-import NavContext from "./context/NavContext";
+import React, {useState} from 'react';
+import NavLink from "./NavLink";
 import {GiHamburgerMenu} from "react-icons/gi";
-import divider from "./partials/Divider";
-import Divider from "./partials/Divider";
-import {comment} from "postcss";
 
 
 export interface INavElement {
@@ -22,13 +18,10 @@ function Navbar() {
         {id: 5, title: 'blog'},
         {id: 6, title: 'contact'},
     ]
-    const {activeLinkId} = useContext(NavContext)
     const [showNav, setShowNav] = useState(false)
-    const width = window.innerWidth
 
     function burgerHandler() {
         setShowNav(!showNav)
-
     }
 
     return (
