@@ -11,8 +11,15 @@ function Credits() {
             </div>
             <div className='flex justify-between'>
                 <div>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit.
+                    <p>
+                        Developed by Leonid Riznyk
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://riznyk-leo.dev/">
+                            https://riznyk-leo.dev/
+                        </a>
+                    </p>
+
                 </div>
                 <ul className='text-2xl flex gap-2 items-center'>
                     <a target='_blank' href='https://www.facebook.com/login/' rel="noreferrer">
