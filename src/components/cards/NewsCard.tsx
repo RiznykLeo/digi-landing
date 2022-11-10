@@ -12,27 +12,29 @@ function NewsCard({img, header}: NewsCardProps) {
                 className="w-full h-[300px] object-cover"
                 src={img}
                 alt="news image"/>
-            <div className='p-4 flex-col flex gap-4'>
-                <h3 className='text-xl font-bold'>
+            <div className='p-4 flex flex-col justify-around gap-4'>
+                <h3 className='text-xl font-bold h-[75px]'>
                     {header}
                 </h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Omnis, quas!
                 </p>
-                <button
-                    className="btn px-10 py-5 relative border-2
-                border-cyan-300 uppercase font-bold tracking-wider
-                 leading-none overflow-hidden"
-                    type="button">
-                <span className="absolute inset-0 bg-gradient-to-r
-                 text-white from-cyan-300 to-purple-400"></span>
-                    <span className="absolute inset-0 text-white
-                 flex justify-center items-center font-bold">
-                Read more
-                </span>
+                <a href="https://news.google.com" target='_blank'>
+                    <button
+                        className="btn w-full px-10 py-5 relative border-2
+                    border-cyan-300 uppercase font-bold tracking-wider
+                     leading-none overflow-hidden"
+                        type="button">
+                    <span className="absolute inset-0 bg-gradient-to-r
+                     text-white from-cyan-300 to-purple-400"></span>
+                        <span className="absolute inset-0 text-white
+                     flex justify-center items-center font-bold">
                     Read more
-                </button>
+                    </span>
+                        Read more
+                    </button>
+                </a>
             </div>
         </div>
     );

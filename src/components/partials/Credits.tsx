@@ -15,10 +15,18 @@ function Credits() {
                     consectetur adipisicing elit.
                 </div>
                 <ul className='text-2xl flex gap-2 items-center'>
-                    <li><AiFillFacebook/></li>
-                    <li><AiFillTwitterCircle/></li>
-                    <li><AiFillInstagram/></li>
-                    <li><AiFillYoutube/></li>
+                    <a target='_blank' href='https://www.facebook.com/login/'>
+                        <li><AiFillFacebook/></li>
+                    </a>
+                    <a target='_blank' href='https://twitter.com/'>
+                        <li><AiFillTwitterCircle/></li>
+                    </a>
+                    <a target='_blank' href='https://www.instagram.com/'>
+                        <li><AiFillInstagram/></li>
+                    </a>
+                    <a target='_blank' href='https://www.youtube.com/'>
+                        <li><AiFillYoutube/></li>
+                    </a>
                 </ul>
             </div>
         </div>

@@ -1,10 +1,7 @@
-import React, {useContext, useRef, useState} from 'react';
-import NavLink from "./partials/NavLink";
-import NavContext from "./context/NavContext";
+import React, {useContext, useState} from 'react';
+import NavLink from "./NavLink";
+import NavContext from "../context/NavContext";
 import {GiHamburgerMenu} from "react-icons/gi";
-import divider from "./partials/Divider";
-import Divider from "./partials/Divider";
-import {comment} from "postcss";
 
 
 export interface INavElement {
@@ -28,7 +25,6 @@ function Navbar() {
 
     function burgerHandler() {
         setShowNav(!showNav)
-
     }
 
     return (

@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import {INavElement} from "../Navbar";
+import {INavElement} from "./Navbar";
 import NavContext from "../context/NavContext";
 
 function NavLink({title}: INavElement) {

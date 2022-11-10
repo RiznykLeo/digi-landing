@@ -3,40 +3,54 @@ import {BsFacebook, BsInstagram} from "react-icons/bs";
 import {AiFillTwitterCircle, AiFillYoutube} from "react-icons/ai";
 
 function Contact() {
+    function handleClick() {
+
+    }
+
     return (
         <div className='relative h-[400px]'>
             <div className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
              z-20 text-white flex flex-col items-center gap-8 w-full'>
                 <ul className='flex gap-4 text-2xl'>
-                    <li className='p-2 rounded-full border-2 border-cyan-300'>
-                        <BsFacebook/>
-                    </li>
-                    <li className='p-2 rounded-full border-2 border-cyan-300'>
-                        <BsInstagram/>
-                    </li>
-                    <li className='p-2 rounded-full border-2 border-cyan-300'>
-                        <AiFillTwitterCircle/>
-                    </li>
-                    <li className='p-2 rounded-full border-2 border-cyan-300'>
-                        <AiFillYoutube/>
-                    </li>
+                    <a target='_blank' href="https://www.facebook.com/">
+                        <li className='p-2 rounded-full border-2 border-cyan-300'>
+                            <BsFacebook/>
+                        </li>
+                    </a>
+                    <a target='_blank' href="https://www.instagram.com/">
+                        <li className='p-2 rounded-full border-2 border-cyan-300'>
+                            <BsInstagram/>
+                        </li>
+                    </a>
+                    <a target='_blank' href="https://twitter.com/">
+                        <li className='p-2 rounded-full border-2 border-cyan-300'>
+                            <AiFillTwitterCircle/>
+                        </li>
+                    </a>
+                    <a target='_blank' href="https://www.youtube.com/">
+                        <li className='p-2 rounded-full border-2 border-cyan-300'>
+                            <AiFillYoutube/>
+                        </li>
+                    </a>
                 </ul>
                 <h2 className='text-center text-4xl px-8 w-full font-bold'>
                     Have any project in mind?
                 </h2>
 
-                <button className="btn px-10 py-5 relative border-2
+                <a target='_blank' href="mailto:anymail@mail.com">
+                    <button className="btn px-10 py-5 relative border-2
                 border-cyan-300 uppercase tracking-wider
                  leading-none overflow-hidden font-bold"
-                        type="button">
+                            type="button">
                 <span className="absolute inset-0 bg-gradient-to-r
                  text-white from-cyan-300 to-purple-400"></span>
-                    <span className="absolute inset-0 text-white
+                        <span className="absolute inset-0 text-white
                  flex justify-center items-center font-bold">
                     Make Inquiry
                 </span>
-                    Make Inquiry
-                </button>
+                        Make Inquiry
+                    </button>
+                </a>
             </div>
 
             <div className='w-full h-full top-0 left-0 absolute z-10 bg-black opacity-70'/>
