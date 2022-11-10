@@ -10,7 +10,10 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import Credits from "./components/partials/Credits";
 import {NavProvider} from "./components/context/NavContext";
+import ReactGA from 'react-ga';
 
+const TRACKING_ID = "G-V5P1Q1DY84 ";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
     return (
