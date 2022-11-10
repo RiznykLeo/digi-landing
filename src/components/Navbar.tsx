@@ -1,6 +1,10 @@
-import React, {useContext, useRef} from 'react';
+import React, {useContext, useRef, useState} from 'react';
 import NavLink from "./partials/NavLink";
 import NavContext from "./context/NavContext";
+import {GiHamburgerMenu} from "react-icons/gi";
+import divider from "./partials/Divider";
+import Divider from "./partials/Divider";
+import {comment} from "postcss";
 
 
 export interface INavElement {
@@ -9,8 +13,6 @@ export interface INavElement {
 }
 
 function Navbar() {
-    const {activeLinkId} = useContext(NavContext)
-
     const navElements: INavElement[] = [
         {id: 0, title: 'home'},
         {id: 1, title: 'services'},
@@ -20,14 +22,23 @@ function Navbar() {
         {id: 5, title: 'blog'},
         {id: 6, title: 'contact'},
     ]
+    const {activeLinkId} = useContext(NavContext)
+    const [showNav, setShowNav] = useState(false)
+    const width = window.innerWidth
+
+    function burgerHandler() {
+        setShowNav(!showNav)
+
+    }
+
     return (
-        <div className='px-48 fixed bg-black w-full z-50'>
+        <div className='px-8 lg:px-48 fixed bg-black w-full z-50'>
             <div className='flex text-white justify-between
-         py-4 w-full h-full items-center'>
+            py-4 w-full h-full items-center'>
                 <div className='text-white text-2xl font-bold'>
                     LOGO
                 </div>
-                <ul className='hidden md:flex gap-6'>
+                <ul className='gap-4 hidden lg:flex'>
                     {
                         navElements.map((e) => {
                             return (<NavLink
@@ -38,7 +49,23 @@ function Navbar() {
                         })
                     }
                 </ul>
+                <div onClick={burgerHandler}
+                     className='block text-cyan-300 text-3xl lg:hidden'>
+                    <GiHamburgerMenu/>
+                </div>
             </div>
+            {showNav &&
+                <ul className='flex flex-col gap-4 items-start py-4'>
+                    {
+                        navElements.map((e) => {
+                            return (<NavLink
+                                key={e.id}
+                                id={e.id}
+                                title={e.title}
+                            />)
+                        })
+                    }
+                </ul>}
         </div>
     );
 }
