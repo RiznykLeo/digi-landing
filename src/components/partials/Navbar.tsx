@@ -1,6 +1,5 @@
-import React, {useContext, useState} from 'react';
+import React, {useState} from 'react';
 import NavLink from "./NavLink";
-import NavContext from "../context/NavContext";
 import {GiHamburgerMenu} from "react-icons/gi";
 
 
@@ -19,9 +18,7 @@ function Navbar() {
         {id: 5, title: 'blog'},
         {id: 6, title: 'contact'},
     ]
-    const {activeLinkId} = useContext(NavContext)
     const [showNav, setShowNav] = useState(false)
-    const width = window.innerWidth
 
     function burgerHandler() {
         setShowNav(!showNav)

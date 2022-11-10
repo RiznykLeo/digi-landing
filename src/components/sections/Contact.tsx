@@ -3,31 +3,27 @@ import {BsFacebook, BsInstagram} from "react-icons/bs";
 import {AiFillTwitterCircle, AiFillYoutube} from "react-icons/ai";
 
 function Contact() {
-    function handleClick() {
-
-    }
-
     return (
         <div className='relative h-[400px]'>
             <div className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
              z-20 text-white flex flex-col items-center gap-8 w-full'>
                 <ul className='flex gap-4 text-2xl'>
-                    <a target='_blank' href="https://www.facebook.com/">
+                    <a target='_blank' href="https://www.facebook.com/" rel="noreferrer">
                         <li className='p-2 rounded-full border-2 border-cyan-300'>
                             <BsFacebook/>
                         </li>
                     </a>
-                    <a target='_blank' href="https://www.instagram.com/">
+                    <a target='_blank' href="https://www.instagram.com/" rel="noreferrer">
                         <li className='p-2 rounded-full border-2 border-cyan-300'>
                             <BsInstagram/>
                         </li>
                     </a>
-                    <a target='_blank' href="https://twitter.com/">
+                    <a target='_blank' href="https://twitter.com/" rel="noreferrer">
                         <li className='p-2 rounded-full border-2 border-cyan-300'>
                             <AiFillTwitterCircle/>
                         </li>
                     </a>
-                    <a target='_blank' href="https://www.youtube.com/">
+                    <a target='_blank' href="https://www.youtube.com/" rel="noreferrer">
                         <li className='p-2 rounded-full border-2 border-cyan-300'>
                             <AiFillYoutube/>
                         </li>
@@ -37,7 +33,7 @@ function Contact() {
                     Have any project in mind?
                 </h2>
 
-                <a target='_blank' href="mailto:anymail@mail.com">
+                <a target='_blank' href="mailto:anymail@mail.com" rel="noreferrer">
                     <button className="btn px-10 py-5 relative border-2
                 border-cyan-300 uppercase tracking-wider
                  leading-none overflow-hidden font-bold"

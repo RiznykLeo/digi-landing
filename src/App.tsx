@@ -1,4 +1,4 @@
-import React, {ReactNode, useRef} from 'react';
+import React from 'react';
 import Navbar from "./components/partials/Navbar";
 import Banner from "./components/sections/Banner";
 import Service from "./components/sections/Service";

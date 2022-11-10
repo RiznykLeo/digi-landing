@@ -7,7 +7,7 @@ interface TestimonialsCardProps {
     position: string
 }
 
-function TestimonialsCard(props: TestimonialsCardProps) {
+function TestimonialCard(props: TestimonialsCardProps) {
     return (
         <div className='border flex flex-col mb-8 lg:w-1/4
         items-center bg-zinc-900 p-8 text-white'>
@@ -38,4 +38,4 @@ function TestimonialsCard(props: TestimonialsCardProps) {
     );
 }
 
-export default TestimonialsCard;
+export default TestimonialCard;

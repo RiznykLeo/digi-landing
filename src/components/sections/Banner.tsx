@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import BannerCard from "../cards/BannerCard";
 import {BiBrain, BiPaperPlane} from "react-icons/bi";
 import {RiLightbulbFlashLine} from "react-icons/ri";

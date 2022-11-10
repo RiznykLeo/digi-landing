@@ -7,7 +7,6 @@ export function NavProvider({children}: any) {
     const providerValue = {
         activeLinkId,
         setActiveLinkId,
-
     }
     return (
         <NavContext.Provider value={providerValue}>

@@ -11,7 +11,7 @@ function NewsCard({img, header}: NewsCardProps) {
             <img
                 className="w-full h-[300px] object-cover"
                 src={img}
-                alt="news image"/>
+                alt="news"/>
             <div className='p-4 flex flex-col justify-around gap-4'>
                 <h3 className='text-xl font-bold h-[75px]'>
                     {header}
@@ -20,7 +20,7 @@ function NewsCard({img, header}: NewsCardProps) {
                     Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Omnis, quas!
                 </p>
-                <a href="https://news.google.com" target='_blank'>
+                <a href="https://news.google.com" target='_blank' rel="noreferrer">
                     <button
                         className="btn w-full px-10 py-5 relative border-2
                     border-cyan-300 uppercase font-bold tracking-wider
