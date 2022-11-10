@@ -6,10 +6,11 @@ import {useNav} from "../hooks/useNav";
 function Footer() {
     const FooterRef = useNav("contact")
     return (
-        <div ref={FooterRef} className='bg-black px-48 text-white py-12 border-b-gray-500 border-b'
+        <div ref={FooterRef} className='bg-black px-8 lg:px-48 text-white
+        py-12 border-b-gray-500 border-b'
              id='contactSection'>
-            <div className='flex justify-between'>
-                <ul className='flex flex-col gap-6'>
+            <div className='lg:flex lg:justify-between'>
+                <ul className='flex flex-col gap-6 mb-8'>
                     <li className='text-4xl font-bold'>
                         LOGO
                     </li>
@@ -20,7 +21,7 @@ function Footer() {
                         <div className='h-[2px] bg-cyan-300 w-1/3'/>
                     </li>
                 </ul>
-                <ul className='flex flex-col gap-6'>
+                <ul className='flex flex-col gap-6 mb-8'>
                     <li className=' font-bold uppercase'>
                         contact us
                     </li>
@@ -37,14 +38,14 @@ function Footer() {
                         <AiFillCalendar/>Monday to Friday
                     </li>
                 </ul>
-                <ul className='flex flex-col gap-6'>
+                <ul className='flex flex-col gap-6 mb-8'>
                     <li className=' font-bold uppercase'>our services</li>
                     <li>Single project</li>
                     <li>Services 1</li>
                     <li>Services 2</li>
                     <li>Works</li>
                 </ul>
-                <ul className='flex flex-col gap-6'>
+                <ul className='flex flex-col gap-6 mb-8'>
                     <li className=' font-bold uppercase'>about us</li>
                     <li>About</li>
                     <li>Blog</li>

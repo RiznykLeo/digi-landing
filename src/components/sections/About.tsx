@@ -9,7 +9,7 @@ function About() {
     return (
         <div ref={AboutRef} id='aboutSection'>
             <Header header="About." prompt="We are more than digital agency"/>
-            <div className='flex justify-between mx-48 gap-4'>
+            <div className='lg:flex lg:justify-between px-8 lg:px-40 gap-4'>
                 <AboutCard header='Who we are'
                            border={false}
                            img='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80'/>

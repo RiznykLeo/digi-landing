@@ -3,7 +3,7 @@ import {AiFillFacebook, AiFillTwitterCircle, AiFillInstagram, AiFillYoutube} fro
 
 function Credits() {
     return (
-        <div className='text-white px-48 py-8'>
+        <div className='text-white px-8 lg:px-48 py-8'>
             <div className='flex items-center gap-6 pb-4 uppercase text-sm font-bold'>
                 <div>Copyright 2022 All right reserved</div>
                 <div>privacy policy</div>
@@ -13,7 +13,6 @@ function Credits() {
                 <div>
                     Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
-                    Accusantium ad animi consequatur consequuntur
                 </div>
                 <ul className='text-2xl flex gap-2 items-center'>
                     <li><AiFillFacebook/></li>

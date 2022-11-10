@@ -6,8 +6,8 @@ function Contact() {
     return (
         <div className='relative h-[400px]'>
             <div className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
-             z-20 text-white flex flex-col items-center gap-8'>
-                <ul className=' flex gap-4 text-2xl'>
+             z-20 text-white flex flex-col items-center gap-8 w-full'>
+                <ul className='flex gap-4 text-2xl'>
                     <li className='p-2 rounded-full border-2 border-cyan-300'>
                         <BsFacebook/>
                     </li>
@@ -21,14 +21,14 @@ function Contact() {
                         <AiFillYoutube/>
                     </li>
                 </ul>
-                <h2 className='text-4xl font-bold'>
+                <h2 className='text-center text-4xl px-8 w-full font-bold'>
                     Have any project in mind?
                 </h2>
-                <button
-                    className="btn px-10 py-5 relative border-2
+
+                <button className="btn px-10 py-5 relative border-2
                 border-cyan-300 uppercase tracking-wider
                  leading-none overflow-hidden font-bold"
-                    type="button">
+                        type="button">
                 <span className="absolute inset-0 bg-gradient-to-r
                  text-white from-cyan-300 to-purple-400"></span>
                     <span className="absolute inset-0 text-white

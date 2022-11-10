@@ -9,7 +9,7 @@ interface TestimonialsCardProps {
 
 function TestimonialsCard(props: TestimonialsCardProps) {
     return (
-        <div className='border flex flex-col w-1/4
+        <div className='border flex flex-col mb-8 lg:w-1/4
         items-center bg-zinc-900 p-8 text-white'>
             <p className='mb-4 w-[80%]'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit .

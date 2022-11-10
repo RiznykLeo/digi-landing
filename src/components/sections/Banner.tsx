@@ -7,11 +7,11 @@ import {useNav} from "../hooks/useNav";
 function Banner() {
     const HomeRef = useNav("home")
     return (
-        <div ref={HomeRef} className='px-48 py-24 pt-32 pb-8' id='homeSection'>
+        <div ref={HomeRef} className='px-8 lg:px-40 py-24 pt-32 pb-8' id='homeSection'>
             <p className='text-cyan-300 uppercase '>
                 Creative mind, creative works.
             </p>
-            <h1 className='text-7xl font-semibold w-1/2 pb-24
+            <h1 className='text-7xl font-semibold w-full lg:w-1/2 pb-24
             bg-gradient-to-r bg-clip-text  text-transparent
             from-purple-500 via-cyan-300 to-indigo-500
             animate-text
@@ -34,7 +34,7 @@ function Banner() {
             </button>
 
 
-            <div className='flex gap-4'>
+            <div className='lg:gap-4 lg:flex '>
                 <BannerCard header="Future Concept." icon={<BiPaperPlane/>}/>
                 <BannerCard header="The Big Ideas." icon={<BiBrain/>}/>
                 <BannerCard header="Creative Solutions." icon={<RiLightbulbFlashLine/>}/>

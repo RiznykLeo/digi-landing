@@ -6,7 +6,7 @@ interface WorkCardProps {
 
 function WorkCard(props: WorkCardProps) {
     return (
-        <div className='workcard w-[175px] h-[400px] relative'>
+        <div className='workcard lg:w-[175px] lg:h-[400px] h-[300px] relative mb-8'>
             <img className=" w-full h-full object-cover"
                  src={props.img}
                  alt="work demo"/>

@@ -32,7 +32,7 @@ function Navbar() {
     }
 
     return (
-        <div className='px-8 lg:px-48 fixed bg-black w-full z-50'>
+        <div className='px-8 lg:px-40 fixed bg-black w-full z-50'>
             <div className='flex text-white justify-between
             py-4 w-full h-full items-center'>
                 <div className='text-white text-2xl font-bold'>

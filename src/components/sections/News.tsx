@@ -13,7 +13,7 @@ function News() {
             <p className='text-cyan-300 uppercase mb-16'>
                 Check out some of our news
             </p>
-            <div className='flex justify-between mx-48 gap-4'>
+            <div className='px-8 lg:flex lg:justify-between lg:px-40 lg:gap-4'>
                 <NewsCard
                     header='Could this VR sketching tool be in coming of age for designers  in the future?'
                     img='https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80'/>
